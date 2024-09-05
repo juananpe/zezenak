@@ -1,4 +1,4 @@
-# Aplicación de Gestión de Toros
+# Aplicación de Gestión de Ganadería
 
 ## Descripción
 Esta aplicación web permite gestionar información sobre toros. Está desarrollada en PHP y utiliza una base de datos MariaDB para almacenar los datos. La aplicación se ejecuta en un entorno Docker, lo que facilita su despliegue y ejecución en diferentes sistemas.
