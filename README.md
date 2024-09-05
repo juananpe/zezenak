@@ -78,10 +78,4 @@ Si necesitas reiniciar la base de datos con los datos iniciales:
 ## Notas Adicionales
 
 - El usuario por defecto es 'admin'.
-- Asegúrate de no exponer información sensible como credenciales de base de datos en entornos de producción.
 - Para cualquier problema o sugerencia, por favor abre un issue en el repositorio del proyecto.
-
-```
-
-Este README proporciona una visión general del proyecto, instrucciones de instalación y ejecución, y algunas notas útiles para el desarrollo y mantenimiento. Puedes ajustarlo según las necesidades específicas de tu proyecto o añadir más detalles si lo consideras necesario.
-
