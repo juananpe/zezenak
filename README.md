@@ -40,6 +40,7 @@ Esta aplicación incluye, pero no se limita a, las siguientes vulnerabilidades:
    ```
    docker-compose up -d
    ```
+   Nota: puedes omitir la opción -d para poder ver los logs de los contenedores en pantalla
 
    Esto iniciará los servicios de Nginx, PHP-FPM y MariaDB, y cargará automáticamente los datos iniciales de la base de datos desde `babeskopia.sql`.
 
