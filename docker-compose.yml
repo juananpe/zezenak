@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www/html
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - php
+    networks:
+      - app-network
+
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile-php
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - app-network
+
+  db:
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: sgssi
+      MYSQL_USER: usuario
+      MYSQL_PASSWORD: J^s6@7vS-iQ
+    volumes:
+      - dbdata:/var/lib/mysql
+      - ./babeskopia.sql:/docker-entrypoint-initdb.d/babeskopia.sql
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  dbdata:

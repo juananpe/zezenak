@@ -1,0 +1,17 @@
+FROM php:7.4-fpm-alpine
+
+# Install mysqli extension
+RUN docker-php-ext-install mysqli
+
+# Install other extensions if needed
+# For example, to install PDO MySQL:
+RUN docker-php-ext-install pdo pdo_mysql
+
+# If you need additional libraries for certain extensions, you can use apk
+# For example, to install GD extension:
+# RUN apk add --no-cache freetype-dev libjpeg-turbo-dev libpng-dev \
+#     && docker-php-ext-configure gd --with-freetype --with-jpeg \
+#     && docker-php-ext-install -j$(nproc) gd
+
+# Clean up
+RUN rm -rf /var/cache/apk/* && rm -rf /tmp/*
