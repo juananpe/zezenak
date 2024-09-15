@@ -351,6 +351,7 @@ CREATE TABLE `Zezena` (
   `altuera` int(11) NOT NULL,
   `pisua` int(11) NOT NULL,
   `adarrarenLuzera` int(11) NOT NULL,
+  `image_filename` VARCHAR(255),
   PRIMARY KEY (`animaliKodea`),
   UNIQUE KEY `animaliKodea_UNIQUE` (`animaliKodea`),
   KEY `id` (`ganadutegiaId`)
@@ -363,7 +364,7 @@ CREATE TABLE `Zezena` (
 
 LOCK TABLES `Zezena` WRITE;
 /*!40000 ALTER TABLE `Zezena` DISABLE KEYS */;
-INSERT INTO `Zezena` VALUES (3,'Idolico',1,'2016-01-11',201,476,26),(4,'Velador',2,'2015-01-01',151,450,32),(5,'Descarado',2,'2015-01-01',152,420,0),(6,'Desteñido',3,'2015-01-01',165,520,46),(7,'Harinero',3,'2015-01-01',164,500,45),(8,'Palolero',4,'2015-01-01',156,450,32),(9,'Timador',4,'2015-01-01',147,450,35),(10,'Barbero',2,'2015-01-01',163,500,45),(11,'Ollero',4,'2015-01-01',152,476,26),(12,'Melenito',4,'2015-12-09',151,476,26),(13,'Bravio',1,'2015-01-01',156,450,32),(14,'Bragao',1,'2015-01-01',147,450,35),(15,'Jazinto',5,'2015-01-01',120,100,25),(1,'Raton',1,'2015-01-01',140,450,38),(16,'zezen1',7,'2015-01-01',120,100,25),(17,'zezen2',7,'2015-01-01',120,100,25);
+INSERT INTO `Zezena` VALUES (3,'Idolico',1,'2016-01-11',201,476,26,NULL),(4,'Velador',2,'2015-01-01',151,450,32,NULL),(5,'Descarado',2,'2015-01-01',152,420,0,NULL),(6,'Desteñido',3,'2015-01-01',165,520,46,NULL),(7,'Harinero',3,'2015-01-01',164,500,45,NULL);
 /*!40000 ALTER TABLE `Zezena` ENABLE KEYS */;
 UNLOCK TABLES;
 
