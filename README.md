@@ -11,6 +11,7 @@ Esta aplicación incluye, pero no se limita a, las siguientes vulnerabilidades:
 - Cross-Site Scripting (XSS)
 - Autenticación y gestión de sesiones débiles
 - Exposición de datos sensibles
+- File upload vulnerabilitie (RCE)
 
 ## Requisitos
 - Docker
